@@ -20,7 +20,7 @@ class UserController extends Controller
         return $request->user();
     }
 
-    public function register(Request $request)
+    public function register(UserRegisterRequest $request)
     {
 
         User::create([
